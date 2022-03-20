@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "friends",
+  "info": {
+    "singularName": "friend",
+    "pluralName": "friends",
+    "displayName": "Friend"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "private": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
